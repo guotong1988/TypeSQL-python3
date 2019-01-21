@@ -35,9 +35,9 @@ if __name__ == '__main__':
     TRAIN_AGG, TRAIN_SEL, TRAIN_COND = TRAIN_ENTRY
     learning_rate = 1e-3
 
-    sql_data, table_data, val_sql_data, val_table_data, \
-            test_sql_data, test_table_data, \
-            TRAIN_DB, DEV_DB, TEST_DB = load_dataset(use_small=USE_SMALL)
+    train_sql_data, table_data, val_sql_data, val_table_data, \
+    test_sql_data, test_table_data, \
+    TRAIN_DB, DEV_DB, TEST_DB = load_dataset(use_small=USE_SMALL)
 
     #word_emb = load_word_emb('glove/glove.%dB.%dd.txt'%(B_word,N_word), \
     #        load_used=args.train_emb, use_small=USE_SMALL)
@@ -83,11 +83,11 @@ if __name__ == '__main__':
 
     for i in range(100):
         print('Epoch %d @ %s'%(i+1, datetime.datetime.now()))
-        print(' Loss = %s'%epoch_train(
+        print(' Loss = %s' % epoch_train(
                 model, optimizer, BATCH_SIZE,
-                sql_data, table_data, TRAIN_ENTRY, args.db_content))
-        print(' Train acc_qm: %s\n breakdown result: %s'%epoch_acc(
-                model, BATCH_SIZE, sql_data, table_data, TRAIN_ENTRY, args.db_content))
+                train_sql_data, table_data, TRAIN_ENTRY, args.db_content))
+        print(' Train acc_qm: %s\n breakdown result: %s' % epoch_acc(
+                model, BATCH_SIZE, train_sql_data, table_data, TRAIN_ENTRY, args.db_content))
 
         val_acc = epoch_acc(model, BATCH_SIZE, val_sql_data, val_table_data, TRAIN_ENTRY, args.db_content, False) #for detailed error analysis, pass True to the end
         print(' Dev acc_qm: %s\n breakdown result: %s'%val_acc)

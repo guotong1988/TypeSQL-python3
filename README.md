@@ -1,7 +1,6 @@
 ## TypeSQL
 
-Source code accompanying our NAACL 2018 paper:[TypeSQL: Knowledge-based Type-Aware Neural Text-to-SQL Generation
-](https://arxiv.org/abs/1804.09769)
+TypeSQL: Knowledge-based Type-Aware Neural Text-to-SQL Generation
 
 #### Environment Setup
 

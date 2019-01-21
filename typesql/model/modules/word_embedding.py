@@ -8,7 +8,7 @@ import numpy as np
 
 class WordEmbedding(nn.Module):
     def __init__(self, word_emb, N_word, gpu, SQL_TOK,
-            trainable=False):
+                 trainable=False):
         super(WordEmbedding, self).__init__()
         self.trainable = trainable
         self.N_word = N_word
@@ -200,7 +200,7 @@ class WordEmbedding(nn.Module):
             val_inp_var = self.embedding(val_tok_var)
         else:
             val_emb_array = np.zeros(
-                    (B, max_len, self.N_word), dtype=np.float32)
+                (B, max_len, self.N_word), dtype=np.float32)
             for i in range(B):
                 for t in range(len(val_embs[i])):
                     val_emb_array[i,t,:] = val_embs[i][t]

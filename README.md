@@ -12,6 +12,9 @@ Python 3 and Torch 1.0
 
 2. Download the pretrained [Glove](https://nlp.stanford.edu/data/wordvecs/glove.42B.300d.zip) and the [paraphrase embedding](https://drive.google.com/file/d/1iWTowxEG1-KZyq-fHP6cb6dNqMh4eHiN/view?usp=sharing) `para-nmt-50m/data/paragram_sl999_czeng.txt`.
 
+#### Eval Result
+
+
 #### Acknowledgement
 
 https://github.com/taoyds/typesql

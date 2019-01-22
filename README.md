@@ -15,6 +15,13 @@ The data already contains the type info.
 
 #### Eval Result
 
+Dev acc_qm: 0.785
+
+Dev execution acc: 0.844
+
+Test acc_qm: 0.738
+
+Test execution acc: 0.817
 
 #### Acknowledgement
 

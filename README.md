@@ -16,7 +16,7 @@ The data already contains the type info.
 #### Eval Result
 
 
-| typesql | dev query-match acc | test query-match acc| dev execution acc | test execution acc|
+| parameter | dev query-match acc | test query-match acc| dev execution acc | test execution acc|
 | ------ | ------ | ------ | ------ | ------|
 | db_content=1 | 0.785 | 0.738 | 0.844 | 0.817 |
 | db_content=0 | 0.659 | 0.651 | 0.722 | 0.718 | 

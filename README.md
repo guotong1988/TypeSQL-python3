@@ -23,8 +23,9 @@ The data already contains the type info.
 
 #### For Understanding
 
+table info:
 ![table](doc/table.png)
-
+question info:
 ![question](doc/question.png)
 
 #### Acknowledgement

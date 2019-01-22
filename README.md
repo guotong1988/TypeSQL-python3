@@ -15,13 +15,12 @@ The data already contains the type info.
 
 #### Eval Result
 
-Dev acc_qm: 0.785
 
-Dev execution acc: 0.844
+| typysql | dev query-match acc | test query-match acc| dev execution acc | test execution acc|
+| ------ | ------ | ------ | ------ | ------|
+| db_content=1 | 0.785 | 0.738 | 0.844 | 0.817 |
+| db_content=0 | 0.659 | 0.651 | 0.722 | 0.718 | 
 
-Test acc_qm: 0.738
-
-Test execution acc: 0.817
 
 #### Acknowledgement
 

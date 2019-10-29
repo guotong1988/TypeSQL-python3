@@ -24,9 +24,9 @@ The data already contains the type info.
 #### For Understanding
 
 table info:
-![table](doc/table.png)
+![table](https://github.com/guotong1988/TypeSQL-python3/blob/master/doc/table.png)
 question info:
-![question](doc/question.png)
+![question](https://github.com/guotong1988/TypeSQL-python3/blob/master/doc/question.png)
 
 #### Acknowledgement
 
